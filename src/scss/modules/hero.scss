@@ -1,5 +1,5 @@
 .hero {
-  padding: 64px 0 0 0;
+  padding: 64px 0 88px 0;
   &__image {
     box-sizing: content-box;
     width: 96px;
@@ -21,6 +21,7 @@
   &__header {
     font-size: 26px;
     line-height: 32px;
+    font-weight: bold;
     text-align: center;
   }
   &__special {
@@ -30,6 +31,7 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
+    padding: 16px 0 48px 0;
     &--special {
       color: $pcolor;
       text-decoration: none;

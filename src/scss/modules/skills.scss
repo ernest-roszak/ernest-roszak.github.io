@@ -1,0 +1,48 @@
+.skills {
+  background: $skillsbg;
+  color: #fff;
+  padding: 64px 16px 88px 16px;
+  &__header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 0 64px;
+  }
+  &--section {
+    &__emoji {
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 72px;
+      padding: 0 0 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__header {
+      text-align: center;
+      margin: 0;
+      padding: 0 0 24px 0;
+    }
+  }
+  &--list {
+    padding: 0 16px 8px 16px;
+    margin: 0 0 64px;
+    &__item {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $listitem;
+      &--work {
+        list-style-image: url(../assets/img/small-tick.png);
+      }
+      &--know {
+        list-style-image: url(../assets/img/tick.png);
+      }
+      &--want {
+        list-style-image: url(../assets/img/dot.png);
+      }
+    }
+  }
+}
