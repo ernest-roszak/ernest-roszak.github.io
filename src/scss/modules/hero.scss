@@ -1,0 +1,11 @@
+.hero {
+  &__image {
+    max-width: 96px;
+      max-height: 96px;
+    }
+    &--container {
+      max-width: 212px;
+      max-height: 130px;
+      
+  }
+}

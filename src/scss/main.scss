@@ -1,11 +1,11 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/hero.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #E5E5E5;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
