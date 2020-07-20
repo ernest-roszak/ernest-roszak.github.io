@@ -1,5 +1,5 @@
 .hero {
-  padding: 64px 0 88px 0;
+  padding: 64px 16px 88px 16px;
   text-align: center;
   position: relative;
   &__image {
@@ -9,7 +9,9 @@
     border: 16px solid #f6f9fd;
     border-radius: 50%;
     &--container {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__hello {
@@ -19,7 +21,7 @@
     }
   }
   &__description {
-    margin: 0 16px;
+
     text-align: center;
     padding-top: 40px;
     &--open {
@@ -37,16 +39,17 @@
     margin: 0;
   }
   &__special {
-    color: $h1color;
+    color: $skillsbg;
   }
   &__paragraph {
+    font-weight: 300;
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    padding: 16px 0 48px 0;
+    padding: 0 0 48px;
     margin: 0;
     &--special {
-      color: $pcolor;
+      color: $pspecial;
       text-decoration: none;
       font-weight: bold;
     }
@@ -56,7 +59,7 @@
     font-size: 20px;
     line-height: 40px;
     text-decoration: none;
-    background: #4da8ff;
+    background: $skillsbg;
     color: #fff;
     border-radius: 64px;
     padding: 4px 24px;
@@ -67,7 +70,7 @@
   .hero {
     padding: 80px 229px 176px 229px;
     text-align: center;
-    
+
     &__hello {
       display: inline-block;
       background: #1070ca;
@@ -112,9 +115,9 @@
       }
       &--close {
         display: block;
-    position: absolute;
-    margin-top: 324px;
-    margin-left: 482px;
+        position: absolute;
+        margin-top: 324px;
+        margin-left: 482px;
       }
     }
   }

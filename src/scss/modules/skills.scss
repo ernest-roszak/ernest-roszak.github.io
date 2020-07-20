@@ -7,41 +7,55 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    margin: 0 0 64px;
   }
   &--section {
+    margin: 0 0 64px;
     &__emoji {
-      font-weight: bold;
       font-size: 64px;
-      line-height: 72px;
-      padding: 0 0 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      line-height: 64px;
+      display: block;
+      text-align: center;
     }
     &__header {
       text-align: center;
-      margin: 0;
-      padding: 0 0 24px 0;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 44px;
+      margin: 16px 0 24px;
     }
   }
   &--list {
-    padding: 0 16px 8px 16px;
-    margin: 0 0 64px;
+    padding: 0;
+    list-style-type: none;
     &__item {
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
       color: $listitem;
-      &--work {
-        list-style-image: url(../assets/img/small-tick.png);
-      }
-      &--know {
-        list-style-image: url(../assets/img/tick.png);
-      }
-      &--want {
-        list-style-image: url(../assets/img/dot.png);
+      padding: 0 0 0 24px;
+      margin: 0;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 7px;
+        display: block;
+        width: 12px;
+        height: 9px;
+        background: url(../assets/img/small-tick.svg);
+        .skills--list__item--know & {
+          background: url(../assets/img/tick.svg);
+        }
+        .skills--list__item--want & {
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          top: 10px;
+          left: 5px;
+          background: $listitem;
+        }
       }
     }
   }
