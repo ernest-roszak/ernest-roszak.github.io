@@ -1,0 +1,49 @@
+.contact {
+  padding: 0px 16px;
+  background: $listitem;
+  &__box {
+    padding: 64px 16px 88px 16px;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: $h1color;
+    padding: 0 0 32px;
+    margin: 0;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: $pcolor;
+    margin: 0;
+  }
+  &__links {
+    padding: 56px 5px 0 5px;
+    text-align: center;
+  }
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 64px;
+  &__item {
+    text-decoration: none;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    margin: 0 24px;
+        
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
