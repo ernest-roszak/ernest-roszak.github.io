@@ -1,23 +1,61 @@
 .hero {
   padding: 64px 16px 88px 16px;
   text-align: center;
-  position: relative;
+  @media (min-width: $tablet) {
+    .hero {
+      max-width: $tablet;
+      margin: 0 auto;
+    }
+  }
+  &__bubble {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: -26px;
+  }
   &__image {
     box-sizing: content-box;
     width: 96px;
     height: 96px;
     border: 16px solid #f6f9fd;
     border-radius: 50%;
+    @media (max-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+      margin-top: 26px;
+    }
     &--container {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
   }
   &__hello {
     display: none;
-    &--speech {
-      display: none;
+    @media (max-width: $desktop) {
+      display: block;
+      background: $skillsbg;
+      border-radius: 16px;
+      padding: 16px 19px;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      color: #fff;
+      position: relative;
+      // margin-top: 0px;
+      // margin-right: 0px;
+      // width: 230px;
+      // height: 72px;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(../assets/img/Speech_cloud.svg);
+        margin-left: 32px;
+        top: 100%;
+        width: 17.42px;
+        height: 22.66px;
     }
   }
   &__description {
@@ -36,6 +74,11 @@
     font-weight: bold;
     text-align: center;
     margin: 0;
+    @media (max-width: $desktop) {
+     font-size: 32px;
+     line-height: 40px;
+    }
+  }
   }
   &__special {
     color: $skillsbg;
@@ -47,6 +90,10 @@
     text-align: center;
     padding: 0 0 48px;
     margin: 0;
+    @media (max-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+     }
     &--special {
       color: $pspecial;
       text-decoration: none;
@@ -65,59 +112,44 @@
     display: inline-block;
   }
 }
-@media screen and (min-width: 960px) {
-  .hero {
-    padding: 80px 229px 176px 229px;
-    text-align: center;
 
-    &__hello {
-      display: inline-block;
-      background: #1070ca;
-      border-radius: 16px;
-      padding: 16px 19px;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
-      color: #ffffff;
-      position: absolute;
-      margin-top: 0px;
-      margin-right: 0px;
-      width: 230px;
-      height: 72px;
-      &--speech {
-        display: inline-block;
-        position: absolute;
-        margin-left: 32px;
-        margin-top: 72px;
-      }
-    }
-    &__image {
-      width: 178px;
-      height: 178px;
-      border: 24px solid #f6f9fd;
-      margin-top: 26px;
-      &--container {
-        padding-top: 0px;
-        width: 403px;
-        height: 228px;
-        position: relative;
-      }
-    }
-    &__description {
-      padding-top: 72px;
-      margin: 0 76px;
-      &--open {
-        display: block;
-        position: absolute;
-        margin-top: 324px;
-        margin-left: -0.04px;
-      }
-      &--close {
-        display: block;
-        position: absolute;
-        margin-top: 324px;
-        margin-left: 482px;
-      }
-    }
-  }
-}
+
+// @media screen and (min-width: $desktop) {
+//   // .hero {
+//   //   padding: 80px 229px 176px 229px;
+//   //   text-align: center;
+
+//   //   &__hello {
+      
+//       }
+//     }
+//     // &__image {
+//     //   width: 178px;
+//     //   height: 178px;
+//     //   border: 24px solid #f6f9fd;
+//     //   margin-top: 26px;
+//     //   &--container {
+//     //     padding-top: 0px;
+//     //     width: 403px;
+//     //     height: 228px;
+//     //     position: relative;
+//     //   }
+//     // }
+//     &__description {
+//       padding-top: 72px;
+//       margin: 0 76px;
+//       &--open {
+//         display: block;
+//         position: absolute;
+//         margin-top: 324px;
+//         margin-left: -0.04px;
+//       }
+//       &--close {
+//         display: block;
+//         position: absolute;
+//         margin-top: 324px;
+//         margin-left: 482px;
+//       }
+//     }
+//   }
+// }
