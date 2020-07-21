@@ -26,24 +26,15 @@
   <body>
     <main>
       <section class="hero">
-        <!-- <img
-          src="../assets/img/open.png"
-          alt="open tag in hero descripion"
-          class="hero__description--open"
-        />
-        <img
-          src="../assets/img/close.png"
-          alt="close tag in hero descripion"
-          class="hero__description--close"
-        /> -->
-
         <div class="hero__image--container">
           <img
             class="hero__image"
             src="../assets/img/mini.jpg"
             alt="Ernest Roszak profile photo"
           />
-        <span class="hero__bubble"> <span class="hero__hello"> Hey there 👋</span></span> 
+          <span class="hero__bubble">
+            <span class="hero__hello"> Hey there 👋</span></span
+          >
         </div>
         <div class="hero__description">
           <h1 class="hero__header">
@@ -60,94 +51,95 @@
             <a class="hero__paragraph--special" href="#contect"> contact me</a>
             😊
           </p>
-          
+
           <a href="mailto:ernest.roszak89@gmail.com" class="hero__contact"
             >ernest.roszak89@gmail.com</a
           >
         </div>
-        
       </section>
       <section class="skills" id="skills">
         <h2 class="skills__header">My skills</h2>
-        <article class="skills--section">
-          <span class="skills--section__emoji">💪</span>
-          <h3 class="skills--section__header">Working knowledge</h3>
-          <ul class="skills--list skills--list__item--work">
-            <li class="skills--list__item ">
-              Semantic HTML5
-            </li>
-            <li class="skills--list__item">Flexbox</li>
-            <li class="skills--list__item">
-              Markdown
-            </li>
-            <li class="skills--list__item">
-              JS: Local storage
-            </li>
-            <li class="skills--list__item">Figma</li>
-            <li class="skills--list__item">
-              CSS grid
-            </li>
-            <li class="skills--list__item">Forms</li>
-            <li class="skills--list__item">
-              JS: DOM manipulations
-            </li>
-            <li class="skills--list__item">SASS</li>
-          </ul>
-        </article>
-        <article class="skills--section">
-          <span class="skills--section__emoji">🤔</span>
-          <h3 class="skills--section__header">Know something about</h3>
-          <ul class="skills--list skills--list__item--know">
-            <li class="skills--list__item">
-              JavaScript ES6 + features
-            </li>
-            <li class="skills--list__item">
-              CSS animations
-            </li>
-            <li class="skills--list__item">
-              Working with API
-            </li>
-            <li class="skills--list__item">
-              NPM Scripts/li>
-            </li>
-            <li class="skills--list__item">
-              Progressive web apps
-            </li>
-            <li class="skills--list__item">
-              CSS grid
-            </li>
-            <li class="skills--list__item">Git</li>
-            <li class="skills--list__item>
-              Accessibility
-            </li>
-          </ul>
-        </article>
-        <article class="skills--section">
-          <span class="skills--section__emoji">🎓</span>
-          <h3 class="skills--section__header">Want to learn</h3>
-          <ul class="skills--list skills--list__item--want">
-            <li class="skills--list__item">
-              React JS
-            </li>
-            <li class="skills--list__item">Node JS</li>
-            <li class="skills--list__item">
-              Electron
-            </li>
-            <li class="skills--list__item">
-              Server side rendering
-            </li>
-            <li class="skills--list__item">
-              Typecript
-            </li>
-            <li class="skills--list__item">
-              CSS grid
-            </li>
-            <li class="skills--list__item">Gatsby</li>
-            <li class="skills--list__item">
-              Websockets
-            </li>
-          </ul>
-        </article>
+        <div class="skills__grid">
+          <article class="skills--section">
+            <span class="skills--section__emoji">💪</span>
+            <h3 class="skills--section__header">Working knowledge</h3>
+            <ul class="skills--list skills--list__item--work">
+              <li class="skills--list__item">
+                Semantic HTML5
+              </li>
+              <li class="skills--list__item">Flexbox</li>
+              <li class="skills--list__item">
+                Markdown
+              </li>
+              <li class="skills--list__item">
+                JS: Local storage
+              </li>
+              <li class="skills--list__item">Figma</li>
+              <li class="skills--list__item">
+                CSS grid
+              </li>
+              <li class="skills--list__item">Forms</li>
+              <li class="skills--list__item">
+                JS: DOM manipulations
+              </li>
+              <li class="skills--list__item">SASS</li>
+            </ul>
+          </article>
+          <article class="skills--section">
+            <span class="skills--section__emoji">🤔</span>
+            <h3 class="skills--section__header">Know something about</h3>
+            <ul class="skills--list skills--list__item--know">
+              <li class="skills--list__item">
+                JavaScript ES6 + features
+              </li>
+              <li class="skills--list__item">
+                CSS animations
+              </li>
+              <li class="skills--list__item">
+                Working with API
+              </li>
+              <li class="skills--list__item">
+                NPM Scripts/li>
+              </li>
+              <li class="skills--list__item">
+                Progressive web apps
+              </li>
+              <li class="skills--list__item">
+                CSS grid
+              </li>
+              <li class="skills--list__item">Git</li>
+              <li class="skills--list__item">
+                Accessibility
+              </li>
+            </ul>
+          </article>
+          <article class="skills--section">
+            <span class="skills--section__emoji">🎓</span>
+            <h3 class="skills--section__header">Want to learn</h3>
+            <ul class="skills--list skills--list__item--want">
+              <li class="skills--list__item">
+                React JS
+              </li>
+              <li class="skills--list__item">Node JS</li>
+              <li class="skills--list__item">
+                Electron
+              </li>
+              <li class="skills--list__item">
+                Server side rendering
+              </li>
+              <li class="skills--list__item">
+                Typecript
+              </li>
+              <li class="skills--list__item">
+                CSS grid
+              </li>
+              <li class="skills--list__item">Gatsby</li>
+              <li class="skills--list__item">
+                Websockets
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section class="projects" id="projects">
         <h2 class="projects__header">Recent projects</h2>
@@ -158,22 +150,20 @@
         <div class="projects__grid">
           <article class="project">
             <div class="project__window">
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-          </div>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
             <div class="project__box">
               <img
-              src="../assets/img/GithubIcon.png"
-              alt=""
-              class="project__icon"
-            />
+                src="../assets/img/GithubIcon.png"
+                alt=""
+                class="project__icon"
+              />
               <h3 class="project__grid project__title">
                 <span class="project__info">project: </span
-                ><span class="project__content"
-                  >my CV</span
-                >
-                </h3>
+                ><span class="project__content">my CV</span>
+              </h3>
               <p class="project__grid">
                 <span class="project__info">description:</span>
                 <span class="project__content"
@@ -196,22 +186,20 @@
           </article>
           <article class="project">
             <div class="project__window">
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-          </div>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
             <div class="project__box">
               <img
-              src="../assets/img/GithubIcon.png"
-              alt=""
-              class="project__icon"
-            />
+                src="../assets/img/GithubIcon.png"
+                alt=""
+                class="project__icon"
+              />
               <h3 class="project__grid project__title">
                 <span class="project__info">project: </span
-                ><span class="project__content"
-                  >my CV</span
-                >
-                </h3>
+                ><span class="project__content">my CV</span>
+              </h3>
               <p class="project__grid">
                 <span class="project__info">description:</span>
                 <span class="project__content"
@@ -234,22 +222,20 @@
           </article>
           <article class="project">
             <div class="project__window">
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-            <span class="project__circle"></span>
-          </div>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
             <div class="project__box">
               <img
-              src="../assets/img/GithubIcon.png"
-              alt=""
-              class="project__icon"
-            />
+                src="../assets/img/GithubIcon.png"
+                alt=""
+                class="project__icon"
+              />
               <h3 class="project__grid project__title">
                 <span class="project__info">project: </span
-                ><span class="project__content"
-                  >my CV</span
-                >
-                </h3>
+                ><span class="project__content">my CV</span>
+              </h3>
               <p class="project__grid">
                 <span class="project__info">description:</span>
                 <span class="project__content"
