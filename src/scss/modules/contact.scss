@@ -4,14 +4,6 @@
   &__box {
     padding: 64px 16px 88px 16px;
   }
-  &__header {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    color: $h1color;
-    margin: 0 0 32px;
-  }
   &__description {
     font-style: normal;
     font-weight: 300;
@@ -19,9 +11,41 @@
     line-height: 32px;
     text-align: center;
     color: $pcolor;
+    @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 40px;
+      }
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: $h1color;
+    margin: 0 0 32px;
+    @media (min-width: $desktop) {
+        font-size: 48px;
+        line-height: 56px;
+      }
   }
   &__links {
     text-align: center;
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 640px;
+        margin: 128px auto 0;
+       }
+    &__description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: $pcolor;
+        
+      }
   }
   &__mail {
     font-weight: bold;
@@ -32,7 +56,6 @@
     color: #fff;
     border-radius: 64px;
     padding: 4px 24px;
-    display: inline-block;
-    margin: 0 auto;
+    
   }
 }

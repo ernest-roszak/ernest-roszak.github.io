@@ -17,23 +17,40 @@
       top: -26px;
     }
   }
-  &__image {
-    box-sizing: content-box;
-    width: 96px;
-    height: 96px;
-    border: 16px solid #f6f9fd;
-    border-radius: 50%;
+  &__contact {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    background: $skillsbg;
+    color: #fff;
+    border-radius: 64px;
+    padding: 4px 24px;
+    display: inline-block;
+  }
+  &__description {
+    text-align: center;
+    position: relative;
     @media (min-width: $desktop) {
-      width: 178px;
-      height: 178px;
-      border: 24px solid #f6f9fd;
-      margin-top: 26px;
-    }
-    &--container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+      max-width: 786px;
+      margin: 0 auto;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 83.23px;
+        height: 254.88px;
+        top: 0;
+      }
+      &::before {
+        background: url(../assets/img/open.png);
+        right: 100%;
+      }
+      &::after {
+        background: url(../assets/img/close.png);
+        left: 100%;
+      }
     }
   }
   &__hello {
@@ -60,31 +77,6 @@
       }
     }
   }
-
-  &__description {
-    text-align: center;
-    position: relative;
-    @media (min-width: $desktop) {
-      max-width: 786px;
-      margin: 0 auto;
-      &::before, &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 83.23px;
-        height: 254.88px;
-        top: 0;
-        }
-      &::before {
-        background: url(../assets/img/open.png);
-        right: 100%;
-      }
-      &::after {
-        background: url(../assets/img/close.png);
-        left: 100%;
-      }
-    }
-  }
   &__header {
     font-size: 26px;
     line-height: 32px;
@@ -96,10 +88,24 @@
       line-height: 40px;
     }
   }
-
-  &__special {
-    color: $skillsbg;
-    white-space: nowrap;
+  &__image {
+    box-sizing: content-box;
+    width: 96px;
+    height: 96px;
+    border: 16px solid #f6f9fd;
+    border-radius: 50%;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+      margin-top: 26px;
+    }
+    &--container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
   }
   &__paragraph {
     font-weight: 300;
@@ -118,15 +124,8 @@
       font-weight: bold;
     }
   }
-  &__contact {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 40px;
-    text-decoration: none;
-    background: $skillsbg;
-    color: #fff;
-    border-radius: 64px;
-    padding: 4px 24px;
-    display: inline-block;
+  &__special {
+    color: $skillsbg;
+    white-space: nowrap;
   }
 }
