@@ -7,9 +7,13 @@ My simple portfolio website
 ## TOOLS
 
 -webpack starter kit
+
 -HTML + CSS + JS
+
 -GitHub API
+
 -CSS Grid
+
 -CSS Flex
 
 
