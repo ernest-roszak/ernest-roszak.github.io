@@ -28,6 +28,11 @@
       line-height: 64px;
       display: block;
       text-align: center;
+      max-height: 64px;
+      &--react {
+        width: 64px;
+        height: auto;
+      }
     }
     &__header {
       text-align: center;
