@@ -1,14 +1,14 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
-console.log("Hi I'm Ernest - nice to meet you 🚀")
+console.log("Hi I'm Ernest - nice to meet you 🚀");
 
-fetch('https://api.github.com/users/ernest-roszak/repos?sort=created')
-.then(resp => resp.json())
-.then(resp => {
+fetch("https://api.github.com/users/ernest-roszak/repos?sort=updated")
+  .then((resp) => resp.json())
+  .then((resp) => {
     for (let repo of resp) {
-        const {name, html_url, description, homepage} = repo;
-        const project = document.querySelector('.project--js');
-        const myTemplate = `<article class="project">
+      const { name, html_url, description, homepage } = repo;
+      const project = document.querySelector(".project--js");
+      const myTemplate = `<article class="project">
         <div class="project__window">
           <span class="project__circle"></span>
           <span class="project__circle"></span>
@@ -43,11 +43,11 @@ fetch('https://api.github.com/users/ernest-roszak/repos?sort=created')
         </div>
       </article>`;
       if (description) {
-      project.innerHTML += myTemplate;
+        project.innerHTML += myTemplate;
       }
     }
-})
-    
-.catch(error => {
-    console.log ('download is fail')
-})
+  })
+
+  .catch((error) => {
+    console.log("download is fail");
+  });
